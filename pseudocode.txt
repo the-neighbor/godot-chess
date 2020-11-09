@@ -1,0 +1,19 @@
+PLANS FOR GODOT CHESS50
+Olive, The Neighbor
+
+Classes:
+	+Board
+	+Piece
+
+Board Functions:
+	+A way to set and get the state of a particular position on the board.
+	   for example:
+
+	   get("a1") returns NULL if a1 is empty, or a object/dictionary representing the piece there
+	   set("a1", {"piece":"pawn","black":true}) spawns a black pawn at a1 on the board
+	+A way to clear the board.
+	+A way to set up the board for a new game.
+
+Piece Functions:
+      get_possible_movements() => array of locations on the board this piece can move to
+      get_possible_captures() => array of locations on the board where this piece may capture
